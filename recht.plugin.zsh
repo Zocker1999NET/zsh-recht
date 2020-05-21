@@ -19,7 +19,7 @@ function recht() {
         return 1;
     fi
     # Generate local path and remote url
-    local docPath=~/"Documents/Uni/Recht/_docs/${docName}.pdf";
+    local docPath="${docsDir}/${docName}.pdf";
     local docUrl="${serverUrl}/${docPartUrl}.pdf";
     # Download if local version not given
     if [ ! -e "$docPath" ]; then
