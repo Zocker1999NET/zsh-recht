@@ -1,7 +1,7 @@
 function recht() {
     # Load configuration values
     local serverUrl="${ZSH_PLUGIN_RECHT_SERVER_URL:-https://www.gesetze-im-internet.de}"
-    local docsDir="${ZSH_PLUGIN_RECHT_DOCS_DIR:-~/.zsh-recht-docs}";
+    local docsDir="${ZSH_PLUGIN_RECHT_DOCS_DIR:-$HOME/.zsh-recht-docs}";
     local docViewer="${ZSH_PLUGIN_RECHT_DOC_VIEWER:-xdg-open}";
     # Create output directory if not exists already
     mkdir --parents "$docsDir";
